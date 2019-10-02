@@ -1,32 +1,31 @@
-/*console.log('Hello World!!!');
-var firstName = 'John';
-console.log(firstName);//you will see the name in the console, coz we load directly into the console itself
-var lastName = 'Smith';
-var age = 28;
-console.log(firstName + lastName + age );
-// JS has a dynamic typing: data types are automaticly assgned to variables
-var fullAge = true;
-console.log(fullAge);
-var job;
-console.log(job)
-job = 'Teacher';
-console.log(job)
+//*********** */ Operator precedence**********
 
-var firstName = 'John';
-var age = 28;
+var now = 2018;
+var yearJohn = 1989;
+ var fullAge = 18;
+ var isFullAge = now - yearJohn >= fullAge;
+ console.log(isFullAge);
+ // returns true
+ //*************First it will do all the operations, and only then it will start to compare them */
+/*Check up operator presedence table in JS */
 
-console.log(firstName + " " + age);
-// define at the same time, define in the other
- var job, isMarried;
- jod = 'teacher';
- isMarried = false;
- console.log(job + isMarried + '\n' + 'Yeah, false')
- //Variable notation
- age = 'twenty eight';
- // it's automaticaly figures out the last type, so no worries!
- alert('Finally, Ive learned something new');
-var lastName = prompt('What is his last name? ');
-alert('Last name has changed! ');
-console.log(firstName + " " + lastName);
-*************************************************************/
-//******************Basic operators */
+// Lets calculate the average age
+
+var ageJohn = now - yearJohn;
+var ageMark = 35;
+var average = (ageJohn+ageMark)/2;
+console.log(average);
+
+
+// Multiple assigments
+var x,y;
+y = x =(3+5) * 4 - 6;//Usuall laws of presedence
+console.log(x,y);
+// Associativity - the way operation is executed
+
+
+// More operators
+x *= 2;
+console.log(x);
+x += 10;
+console.log(x);
