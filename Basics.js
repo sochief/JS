@@ -67,9 +67,49 @@ console.log(typeof x);
 //Welcome to very basics of the operators
 
 
+// If else statements
+
+var firstName = 'John';
+var civilStatus = 'Single';
+
+if(civilStatus == 'married'){
+    console.log('John is married');
+}
+    else{
+        console.log(firstName + ' will soon ')
+}
+/*switch(statement){
+    case(){
+        do
+    }
+    case(){
+        do
+    }
+} */
 
 
 
+
+
+/** The Ternary Operator and Switch Statements */
+
+
+
+var filmName = 'John';
+var age = 16;
+
+age >= 16 ? console.log(firstName + ' drinks beer'): console.log(firstName + ' drinks juice');
+  
+
+var drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
+
+
+  if (age>=18){
+      var drink = 'beer';
+  } else {
+      var drink = 'juice';
+  }
 
 
 
