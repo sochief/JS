@@ -36,6 +36,7 @@ console.log(firstName + " " + lastName);
 
 
 /* Math operators */
+/*
 var now, ageJohn, ageMark;
 now = 2018;
 ageMark = now -33;
@@ -97,19 +98,34 @@ if(civilStatus == 'married'){
 
 var filmName = 'John';
 var age = 16;
-
+// first if statement variation
 age >= 16 ? console.log(firstName + ' drinks beer'): console.log(firstName + ' drinks juice');
   
-
-var drink = age >= 18 ? 'beer' : 'juice';
+//second one
+var drink = age >= 18 ?/*true */ 'beer' : /*false*/'juice';
 console.log(drink);
-
-
   if (age>=18){
       var drink = 'beer';
   } else {
       var drink = 'juice';
   }
+//third one Switch statement
 
+var job = 'instructor';
+switch(job){
+    // if you want 2 similar cases with different choises you can do:
+    case 'instructor':
+    case 'teacher':
+        console.log(firstName + ' teaches kids how to code');
+        break;
+    case 'driver':
+        console.log(firstName + ' drives an uber');
+        break;
+    case 'designer':
+        console.log(firstName + ' designe beautiful web pages');
+        break;
+    default:
+        console.log(firstName + ' does something else.')
+}
 
 
