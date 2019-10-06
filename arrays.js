@@ -68,4 +68,8 @@ console.log(john.indexOf(1998));
 // Now, lets check the existence of the element with an if statement
 
 
-john.indexOf('designer') === -1 ? 'John is not a designer' : 'John is a designer';
+var isDesigner = john.indexOf('designer') === -1 ?
+ 'John is not a designer' : 'John is a designer';
+
+console.log(isDesigner);
+//
