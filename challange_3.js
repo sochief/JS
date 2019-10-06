@@ -9,27 +9,29 @@ var tipsCalculate = function(bills){
     for( i = 0; i < bills.length; i++){
         switch(true){
             case (bills[i] < 50):
-                onlyTips[i] = bills[i]*0.2;
-                fullTips[i] = (bills[i]*0.2) + bills[i];
+                onlyTips[i] = (bills[i]*0.2).toFixed();
+                fullTips[i] = ((bills[i]*0.2) + bills[i]).toFixed();
                 break;
             case (bills[i] > 50 && bills[i]) < 200:
-                onlyTips[i] = bills[i]*0.15;
-                fullTips[i] = bills[i]*0.15 + bills[i];
+                onlyTips[i] = (bills[i]*0.15).toFixed();
+                fullTips[i] = (bills[i]*0.15 + bills[i]).toFixed();
+
                 break;
             case (bills[i] > 200):
-                onlyTips[i] = bills[i]*0.1;
-                fullTips[i] = (bills[i]*0.1) + bills[i];
+                onlyTips[i] = (bills[i]*0.1).toFixed();
+                fullTips[i] = ((bills[i]*0.1) + bills[i]).toFixed();
                 break;
 
         }
     }
 }
-console.log('Okay, lets try to do that stuff \n');
-console.log(bills)
-console.log(onlyTips);
-console.log(fullTips);
+var billsOut = function(bills,onlyTips, fullTips){
+    console.log('Here are the bills, only tips, bills and tips coloumns \n');
+    console.log('Restaurant number           Bills          Only tips           Bills with tips');
+    for(i = 0; i < bills.length ; i++){
+        console.log('Restaraunt no:'+ bills.indexOf(bills[i])+'              '+bills[i]+'                '+ onlyTips[i] + '                 '+ fullTips[i]);
+    }
+}
 
 tipsCalculate(bills);
-console.log(bills);
-console.log(onlyTips);
-console.log(fullTips);
+billsOut(bills, onlyTips, fullTips);
