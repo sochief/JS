@@ -12,7 +12,7 @@ var tipsCalculate = function(bills) {
                 onlyTips[i] = (bills[i] * 0.2).toFixed();
                 fullTips[i] = (bills[i] * 0.2 + bills[i]).toFixed();
                 break;
-            case (bills[i] > 50 && bills[i]) < 200:
+            case bills[i] > 50 && bills[i] < 200:
                 onlyTips[i] = (bills[i] * 0.15).toFixed();
                 fullTips[i] = (bills[i] * 0.15 + bills[i]).toFixed();
 
