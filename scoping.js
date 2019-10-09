@@ -1,6 +1,6 @@
 // Scoping answers the  question "Where can we access a certain variable?"
 //Example
-var a = 'Hello! '; //global scopr
+var a = 'Hello! '; //global scope
 first();
 function first() {
     // first scope
