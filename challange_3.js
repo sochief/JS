@@ -8,7 +8,7 @@ var tipsCalculate = function(bills) {
     var i;
     for (i = 0; i < bills.length; i++) {
         switch (true) {
-            case bills[i] < 50:
+            case bills[i] < 60:
                 onlyTips[i] = (bills[i] * 0.2).toFixed();
                 fullTips[i] = (bills[i] * 0.2 + bills[i]).toFixed();
                 break;
